@@ -20,6 +20,8 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
+    
+    // post comment
     @PostMapping("/comment/add")
     ResponseEntity<String> addComment(@RequestBody PostCommentRequestDto request) throws Exception {
 
